@@ -20,7 +20,7 @@ const Header = () => {
         <div className=" relative hidden w-24 cursor-pointer lg:inline-grid">
           <Image src={logo} alt="" fill="true" className="object-contain" />
         </div>
-        <div className="relative w-10 flex-shrink-0 cursor-pointer lg:hidden">
+        <div className="relative w-8 flex-shrink-0 cursor-pointer lg:hidden">
           <Image
             src={logoMobile}
             alt=""
