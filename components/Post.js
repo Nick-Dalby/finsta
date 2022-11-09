@@ -16,7 +16,7 @@ const Post = ({ id, username, avatar, img, caption }) => {
       <div className="flex items-center p-5">
         <img
           src={avatar}
-          className="mr-3 h-12 w-12 rounded-full border object-contain p-1"
+          className="mr-3 h-12 w-12 rounded-full border object-contain p-[2px]"
           alt=""
         />
         <p className="flex-1 font-bold">{username}</p>
