@@ -16,7 +16,7 @@ import logo from '../public/logo.svg'
 const Header = () => {
   return (
     <div className='shadow-sm border-b bg-white sticky top-0 z-50'>
-      <div className="mx-5 flex max-w-6xl justify-between lg:mx-auto ">
+      <div className="mx-5 flex max-w-6xl justify-between lg:mx-5 xl:mx-auto">
         <div className=" relative hidden w-24 cursor-pointer lg:inline-grid">
           <Image src={logo} alt="" fill="true" className="object-contain" />
         </div>
@@ -42,7 +42,6 @@ const Header = () => {
         </div>
         <div className="flex items-center justify-end space-x-4">
           <HomeIcon className="navButton" />
-          <MenuIcon className="h-6 w-6 cursor-pointer md:hidden" />
           <div className="navButton relative">
             <PaperAirplaneIcon className="navButton rotate-45" />
             <div className="absolute -top-1 -right-3 text-xs w-5 h-5 bg-indigo-600 rounded-full flex items-center justify-center animate-pulse text-white">3</div>
@@ -55,6 +54,7 @@ const Header = () => {
             alt="user profile picture"
             className="h-10 w-10 cursor-pointer rounded-full"
           />
+          <MenuIcon className="h-6 w-6 cursor-pointer md:hidden" />
         </div>
       </div>
     </div>

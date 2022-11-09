@@ -19,7 +19,7 @@ const Stories = () => {
   }, [])
 
   return (
-    <div className='flex space-x-2 p-6 bg-white mt-8 border-gray-200 border rounded-sm overflow-x-scroll scrollbar-thin scrollbar-thumb-indigo-600'>
+    <div className='flex space-x-2 p-6 bg-white mt-8 border-gray-200 border rounded-md overflow-x-scroll scrollbar-thin scrollbar-thumb-indigo-600'>
       {suggestions.map((user) => (
         <Story key={user.userId} img={user.avatar} username={user.username}/>
       ))}
