@@ -131,7 +131,7 @@ const Post = ({ id, username, avatar, img, caption }) => {
 
       {/* comments */}
       {comments.length > 0 && (
-        <div className="ml-4 h-20 overflow-y-scroll scrollbar-thin scrollbar-thumb-black">
+        <div className="ml-4 max-h-24 overflow-y-scroll scrollbar-thin scrollbar-thumb-black">
           {comments.map((comment) => (
             <div key={comment.id} className="mb-3 flex items-center space-x-2">
               <img

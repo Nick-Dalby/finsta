@@ -106,7 +106,7 @@ const Modal = () => {
                 ) : (
                   <div
                     onClick={() => filePickerRef.current.click()}
-                    className="mx-auto flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-red-100 active:scale-95"
+                    className="mx-auto flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-red-100 active:scale-95 hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all duration-200"
                   >
                     <CameraIcon
                       className="h-6 w-6 text-red-600"
