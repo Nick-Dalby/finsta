@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <div className="sticky top-0 z-50 border-b bg-white shadow-sm">
-      <div className="mx-5 flex max-w-6xl justify-between lg:mx-5 xl:mx-auto">
+      <div className="mx-5 flex max-w-6xl justify-between lg:mx-5 xl:mx-auto h-20 ">
         <div className=" relative hidden w-24 cursor-pointer lg:inline-grid" onClick={() => router.push('/')}>
           <Image src={logo} alt="" fill="true" className="object-contain" />
         </div>
@@ -35,8 +35,8 @@ const Header = () => {
             className="object-contain"
           />
         </div>
-        <div className="max-w-xs">
-          <div className="relative mt-1 rounded-md p-3">
+        <div className="max-w-xs hidden sm:inline-block">
+          <div className="relative mt-2 rounded-md p-3">
             <div className="pointer-events-none absolute inset-y-0 flex items-center pl-3">
               <SearchIcon className="h-5 w-5 text-gray-400" />
             </div>
