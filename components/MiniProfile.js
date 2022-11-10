@@ -9,7 +9,7 @@ const MiniProfile = () => {
     <div className="mt-10 ml-8 flex items-center justify-between ">
       <img
         src={session?.user.image}
-        alt="avatar"
+        alt=""
         className="h-16 w-16 rounded-full border p-[2px]"
       />
       <div className="mx-4 flex-1">
