@@ -13,9 +13,12 @@ import { useRouter } from 'next/router'
 import { signIn, signOut, useSession } from 'next-auth/react'
 import logoMobile from '../public/logo-mobile.svg'
 import logo from '../public/logo.svg'
+import { modalState } from '../atoms/modalAtom'
+import { useRecoilState } from 'recoil'
 
 const Header = () => {
   const { data: session, status } = useSession()
+  const [open, setOpen] = useRecoilState(modalState)
   const router = useRouter()
 
   return (
@@ -55,7 +58,7 @@ const Header = () => {
                   3
                 </div>
               </div>
-              <PlusCircleIcon className="navButton" />
+              <PlusCircleIcon className="navButton" onClick={() => setOpen(true)} />
               <UserGroupIcon className="navButton" />
               <HeartIcon className="navButton" />
               <img
