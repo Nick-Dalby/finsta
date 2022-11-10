@@ -9,22 +9,22 @@ import {
 } from '@heroicons/react/outline'
 import { HomeIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
-
+import { useRouter } from 'next/router'
 import { signIn, signOut, useSession } from 'next-auth/react'
 import logoMobile from '../public/logo-mobile.svg'
 import logo from '../public/logo.svg'
 
 const Header = () => {
   const { data: session, status } = useSession()
-  console.log(status)
+  const router = useRouter()
 
   return (
     <div className="sticky top-0 z-50 border-b bg-white shadow-sm">
       <div className="mx-5 flex max-w-6xl justify-between lg:mx-5 xl:mx-auto">
-        <div className=" relative hidden w-24 cursor-pointer lg:inline-grid">
+        <div className=" relative hidden w-24 cursor-pointer lg:inline-grid" onClick={() => router.push('/')}>
           <Image src={logo} alt="" fill="true" className="object-contain" />
         </div>
-        <div className="relative w-8 flex-shrink-0 cursor-pointer lg:hidden">
+        <div className="relative w-8 flex-shrink-0 cursor-pointer lg:hidden" onClick={() => router.push('/')}>
           <Image
             src={logoMobile}
             alt=""
@@ -44,7 +44,7 @@ const Header = () => {
             />
           </div>
         </div>
-        <div className="flex items-center justify-end space-x-4">
+        <div className="flex items-center justify-end space-x-4" onClick={() => router.push('/')}>
           <HomeIcon className="navButton" />
 
           {session ? (
