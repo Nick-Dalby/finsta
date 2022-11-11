@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Finsta 📷
 
-## Getting Started
+Insta-like site built with NextJs, Tailwind and Firebase
 
-First, run the development server:
+**Live site:** [Finsta](https://finsta-zeta.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![screenshot](https://user-images.githubusercontent.com/99472735/201326901-60cb658b-b60f-4eb1-805b-8a5a60cb6cac.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How It's Made:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+**Tech used:** NextJs, React, Tailwind, Firebase, Recoil
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Insta-like site allows users to sign-in with Google, post photos with captions, comment and like other users posts
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Features:
 
-## Learn More
+- custom Next Auth login page
+- Firebase: Firestore database, Storage and Auth
+- Recoil global state managemnt
+- Fake users generated using FakerJs
+- responsive styles using Tailwind
+- Headless UI dialog component
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Optimizations
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The app only covers basic opperations (auth with Google, uploading posts, comments, likes) potential to add full search, components to view more comments, full profile page, alternative sign up methods etc...
 
-## Deploy on Vercel
+## Lessons Learned / Demonstrations of:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Tailwind with plugins implementation
+- Next Auth
+- Firebase v9 modules
+- Recoil state manager implementation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## More projects:
+
+Here are some more examples of recent projects in my portfolio:
+
+**J.VELO:** https://github.com/Nick-Dalby/jvelo-landed
+
+**DeepL Translator:** https://github.com/Nick-Dalby/translator
+
+**Workshop:** https://github.com/Nick-Dalby/workshop-store
