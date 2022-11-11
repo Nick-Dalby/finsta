@@ -20,7 +20,7 @@ Features:
 - Fake users generated using FakerJs
 - responsive styles using Tailwind
 - Headless UI dialog component
-
+- react-moment library for 'fromNow' timestamps
 
 ## Optimizations
 
